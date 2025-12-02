@@ -4,6 +4,8 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Oswald';
+    color: orange;
 }
 
 body {
@@ -144,12 +146,52 @@ margin: 0 auto;
 }
 
 .country-card {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;   /* ou 'contain' se preferir */
-    border-radius: 10px;
-    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: darkblue;
+    border-radius: 5px;
+    padding: 16px;           /* IMPORTANTE */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;           /* NOVO */
+    flex-direction: column;  /* NOVO */
+    gap: 10px;
+    cursor: pointer;               /* mãozinha */
+    transition: transform .15s ease, box-shadow .15s ease;
 }
+
+.country-card:hover {
+    transform: translateY(-4px);   /* levanta um pouquinho */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  
+}
+
+.country-card img{
+    width: 100%;
+    height: 120px;
+    object-fit: contain; /* mostra a bandeira inteira sem cortar */
+    background: #f2f2f2;  /* fundo neutro para completar o espaço */
+    padding: 6px;         /* opcional, deixa espaço */
+    border-radius: 6px;
+    display: block;    
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: darkblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
 
 
 footer {
