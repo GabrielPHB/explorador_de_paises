@@ -1,1 +1,4 @@
-# explorador_de_paises
+Este projeto é uma aplicação web interativa que apresenta informações sobre países ao redor do mundo utilizando a API pública REST Countries. A interface permite pesquisar países pelo nome, buscar por continente e visualizar dados importantes, como bandeira, capital, população, idioma e moedas.
+Cada país conta ainda com um modal detalhado, exibindo suas informações de forma organizada e simples. O objetivo do projeto é oferecer uma experiência intuitiva e educativa, tornando o aprendizado sobre geografia mais acessível e interessante.
+
+Este projeto foi produzido por Gabriel Rocha Silva Machado, utilizando as tecnologias: HTML, CSS e JS para o front-end, além da API REST Countries
