@@ -244,3 +244,20 @@ footer h2 {
 .aboutme-innerfield {
     margin: 40px;
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .aboutme-field h2{
+        font-size: 30px
+    }
+
+    .aboutme-field {
+        margin: 15px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 722px) {
+    .aboutme-field h2 {
+        font-size: 25px;
+    }
+    
+}
