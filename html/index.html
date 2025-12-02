@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorador de Países</title>
     <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
     <header>
@@ -20,9 +21,30 @@
         <div class="main-h1">
             <h1>Explore informações sobre os países e suas culturas</h1>
         </div>
-        <div class="main-board">
-            <h2>Selecione o País</h2>
-        </div>
+
+<div class="filters">
+    <div class="search-field">
+        <input type="text" id="search-field" placeholder="Digite:">
+    </div>
+
+    <div class="sort-field">
+        <select id="continent">
+            <option value="">Todos os continentes</option>
+            <option value="Africa">África</option>
+            <option value="Americas">Américas</option>
+            <option value="Asia">Ásia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+    </div>
+</div>
+
+<!-- CAIXA 2: LISTA DE PAÍSES -->
+<section class="countries-list" id="countries-list"></section>
+
+<script src="js/script.js"></script>
+
+        <script src="/js/script.js"></script>
     </main>
 
     <footer>
