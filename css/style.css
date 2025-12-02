@@ -56,6 +56,7 @@ main h1 {
 
 .main-h1{
     display: flex;
+    text-align: center;
 }
 
 .main-board {
@@ -90,30 +91,27 @@ main h1 {
     display: grid;
 }
 
-
-
 .section {
-grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-
 .select-region {
-display: flex;
-flex-direction: column;
-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .select-region select {
-padding: 12px;
-border-radius: 15px;
-border: 1px solid #ccc;
-font-size: 16px;
-cursor: pointer;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .region-grid {
-width: 80%;       
-margin: 0 auto;    
+    width: 80%;       
+    margin: 0 auto;    
 }
 
 .filters {
@@ -150,26 +148,26 @@ margin: 0 auto;
     margin-right: 5px;
     background: darkblue;
     border-radius: 5px;
-    padding: 16px;           /* IMPORTANTE */
+    padding: 16px;         
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    display: flex;           /* NOVO */
-    flex-direction: column;  /* NOVO */
+    display: flex;          
+    flex-direction: column; 
     gap: 10px;
-    cursor: pointer;               /* mãozinha */
+    cursor: pointer;              
     transition: transform .15s ease, box-shadow .15s ease;
 }
 
 .country-card:hover {
-    transform: translateY(-4px);   /* levanta um pouquinho */
+    transform: translateY(-4px);  
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);  
 }
 
 .country-card img{
     width: 100%;
     height: 120px;
-    object-fit: contain; /* mostra a bandeira inteira sem cortar */
-    background: #f2f2f2;  /* fundo neutro para completar o espaço */
-    padding: 6px;         /* opcional, deixa espaço */
+    object-fit: contain; 
+    background: #f2f2f2;  
+    padding: 6px;        
     border-radius: 6px;
     display: block;    
 }
@@ -192,8 +190,6 @@ margin: 0 auto;
     max-width: 400px;
 }
 
-
-
 footer {
     display: flex;
     padding: 30px;
@@ -204,4 +200,19 @@ footer h2 {
     margin: auto;
     color: darkorange;
     font-family: 'Oswald';
+}
+
+@media (min-width: 320px) and (max-width: 434px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .filters .search-field input {
+        width: 100px;
+    }
+
+    .main-h1{
+        text-align: center;
+    }
 }
