@@ -41,6 +41,7 @@ nav {
     text-decoration: none;
 }
 
+/*Página principal*/
 main {
     display: block;
     background-color: orange;
@@ -153,7 +154,7 @@ main h1 {
     display: flex;          
     flex-direction: column; 
     gap: 10px;
-    cursor: pointer;              
+    cursor: pointer;            
     transition: transform .15s ease, box-shadow .15s ease;
 }
 
@@ -202,6 +203,7 @@ footer h2 {
     font-family: 'Oswald';
 }
 
+/*Responsividade da página principal e sobre*/
 @media (min-width: 320px) and (max-width: 434px) {
     .logo {
         height: 100px;
@@ -215,4 +217,30 @@ footer h2 {
     .main-h1{
         text-align: center;
     }
+}
+
+/*Página sobre*/
+
+.about-me {
+    color: darkblue;
+}
+
+.aboutme-text {
+    display: flex;
+    text-align: center;
+}
+
+.aboutme-field {
+    background-color: peachpuff;
+    margin: 60px;
+    border: darkblue 5px dashed;
+}
+
+.aboutme-field h2 {
+    color: darkblue;
+    font-size: 50px;
+}
+
+.aboutme-innerfield {
+    margin: 40px;
 }
